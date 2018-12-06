@@ -14,4 +14,4 @@ etcdctl snapshot restore /backup/$1 \
 echo "finished restoring from snapshot $1"
 
 echo "starting etcd cluster"
-etcd --name $CLUSTERNAME --listen-client-urls http://localhost:${ETCDPORT} --advertise-client-urls http://localhost:${ETCDPORT} --listen-peer-urls http://localhost:${PORT}
+etcd --name $CLUSTERNAME --listen-client-urls http://0.0.0.0:${ETCDPORT} --advertise-client-urls http://0.0.0.0:${ETCDPORT} --listen-peer-urls http://0.0.0.0:${PORT}

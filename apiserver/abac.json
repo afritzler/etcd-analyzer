@@ -1,0 +1,1 @@
+{"apiVersion": "abac.authorization.kubernetes.io/v1beta1", "kind": "Policy", "spec": {"user": "system:anonymous", "group": "system:unauthenticated", "apiGroup": "*", "namespace": "*", "resource": "*", "nonResourcePath": "*"}}
